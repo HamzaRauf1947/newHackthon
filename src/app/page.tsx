@@ -5,6 +5,9 @@ import Link from "next/link";
 import Whatmakes from "./component/Whatmakes";
 
 import Parent from "../../Public/Parent.png"
+import RightImage from "../../Public/RightImage.png"
+import chaircard from "../../Public/chaircard.png"
+import matka from "../../Public/matka.png"
 
 export default function Home() {
   return (
@@ -39,7 +42,7 @@ export default function Home() {
 
           <div className="flex-1 lg:block hidden">
             <Image
-              src="/Right Image.png"
+              src={RightImage}
               alt="Right Image"
               width={520}
               height={584}
@@ -67,7 +70,7 @@ export default function Home() {
             {/* card1 */}
             <div>
               <Image
-                src="/chaircard.png"
+                src={chaircard}
                 alt="Right Image"
                 width={305}
                 height={375}
@@ -81,7 +84,7 @@ export default function Home() {
             {/* card2 */}
             <div>
               <Image
-                src="/matka.png"
+                src={matka}
                 alt="Right Image"
                 width={305}
                 height={375}
