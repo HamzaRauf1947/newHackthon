@@ -15,6 +15,7 @@ import img4 from "../../../Public/img4.png"
 
 
 import Caretdown from "../../../Public/Caretdown.svg"
+import banner from "../../../Public/banner.png"
 
 
 
@@ -26,9 +27,22 @@ const page = () => {
       <Navbar/>
 
 
-      <div style={{backgroundImage:"url(/banner.png)"}} className="w-full h-[209px]   bg-cover flex justify-center bg-center">
-  <div className="w-full max-w-7xl flex sm:items-end items-center justify-center sm:justify-normal sm:mb-[36px] px-4">
-    <h1 className="text-white text-[36px] ">All Products</h1>
+      <div className="w-full flex justify-center">
+  {/* Image container */}
+  <div className="w-full h-[209px] relative">
+    <Image
+      src={banner}
+      alt="Banner Image"
+      width={1440}
+      height={209}
+      className="w-full h-full object-cover"
+    />
+    {/* Overlay text container */}
+    <div className="absolute inset-0 flex justify-center sm:items-end items-center">
+      <div className="w-full max-w-[1440px] flex justify-center sm:justify-start sm:ml-5 sm:bottom-[32px] text-center sm:text-left px-4">
+        <h1 className="text-white text-[36px]  mb-[36px]">All Products</h1>
+      </div>
+    </div>
   </div>
 </div>
 
