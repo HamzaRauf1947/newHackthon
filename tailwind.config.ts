@@ -24,8 +24,8 @@ const config: Config = {
       
       },
       backgoundImage:{
-        bannerImg:"url('/banner.png')",
-      }
+        bannerImg:"url('/Public/banner.png')",
+      },
 
     },
   },

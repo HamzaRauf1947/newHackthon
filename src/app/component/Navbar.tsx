@@ -1,5 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
+import SearchIcon from "../../../Public/SearchIcon.svg"
+import Shoppingcart from "../../../Public/Shoppingcart.svg"
+import Menu from "../../../Public/Menu.svg"
+import UserAvatar from "../../../Public/UserAvatar.svg"
+
 
 const Navbar = () => {
     return (
@@ -8,7 +13,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center sticky top-0 z-50 h-[69px] bg-white lg:px-[28px] px-4"> {/* Added bg-white */}
                 <div>
                     <Image
-                        src="/Search.svg"
+                        src={SearchIcon}
                         alt="Search"
                         width={16}
                         height={16}
@@ -21,21 +26,21 @@ const Navbar = () => {
 
                 <div className="flex items-center gap-4">
                     <Image
-                        src="/Shopping--cart.svg"
+                        src={Shoppingcart}
                         alt="Search"
                         width={16}
                         height={16}
                         className="md:block hidden"
                     />
                     <Image
-                        src="/User--avatar.svg"
+                        src={UserAvatar}
                         alt="Search"
                         width={16}
                         height={16}
                         className="md:block hidden"
                     />
                     <Image
-                        src="/Search.svg"
+                        src={SearchIcon}
                         alt="Search"
                         width={16}
                         height={16}
@@ -43,7 +48,7 @@ const Navbar = () => {
                     />
 
                     <Image
-                        src="/Menu.svg"
+                        src={Menu}
                         alt="Menu"
                         width={16}
                         height={16}

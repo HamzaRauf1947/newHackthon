@@ -1,6 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SearchIcon from "../../../Public/SearchIcon.svg"
+import Shoppingcart from "../../../Public/Shoppingcart.svg"
+import Menu from "../../../Public/Menu.svg"
+import UserAvatar from "../../../Public/UserAvatar.svg"
 
 const NavAbout = () => {
   return (
@@ -22,22 +26,22 @@ const NavAbout = () => {
             </ul>
 
                <div className="flex items-center gap-4">
-                <Image
-                        src="/Search.svg"
+               <Image
+                        src={SearchIcon}
+                        alt="Search"
+                        width={16}
+                        height={16}
+                        className="md:hidden block"
+                    />
+                      <Image
+                        src={Shoppingcart}
                         alt="Search"
                         width={16}
                         height={16}
                         className="md:block hidden"
                     />
-                    <Image
-                        src="/Shopping--cart.svg"
-                        alt="Search"
-                        width={16}
-                        height={16}
-                        className="md:block hidden"
-                    />
-                    <Image
-                        src="/User--avatar.svg"
+                     <Image
+                        src={UserAvatar}
                         alt="Search"
                         width={16}
                         height={16}
@@ -45,12 +49,12 @@ const NavAbout = () => {
                     />
                    
 
-                    <Image
-                        src="/Menu.svg"
+                   <Image
+                        src={Menu}
                         alt="Menu"
-                        width={20}
-                        height={20}
-                        className="md:hidden block "
+                        width={16}
+                        height={16}
+                        className="md:hidden block"
                     />
                 </div>
                </div>

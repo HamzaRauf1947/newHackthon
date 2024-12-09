@@ -4,6 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Whatmakes from '../component/Whatmakes'
 
+import Menu from "../../../Public/Menu.svg"
+import Shoppingcart from "../../../Public/Shoppingcart.svg"
+import UserAvatar from "../../../Public/UserAvatar.svg"
+import SearchIcon from "../../../Public/SearchIcon.svg"
+
+
+
+import ImageLeftchair from "../../../Public/ImageLeftchair.png"
+import matka from "../../../Public/matka.png"
+import lamp from "../../../Public/lamp.png"
+import Parent from "../../../Public/Parent.png"
+import chaircard from "../../../Public/chaircard.png"
+
 const page = () => {
     return (
         <div>
@@ -31,21 +44,21 @@ const page = () => {
 
                     <div className="flex items-center gap-4">
                         <Image
-                            src="/Search.svg"
+                            src={SearchIcon}
                             alt="Search"
                             width={16}
                             height={16}
                             className="md:block "
                         />
                         <Image
-                            src="/Shopping--cart.svg"
+                            src={Shoppingcart}
                             alt="Search"
                             width={16}
                             height={16}
                             className="md:block "
                         />
                         <Image
-                            src="/User--avatar.svg"
+                            src={UserAvatar}
                             alt="Search"
                             width={16}
                             height={16}
@@ -54,7 +67,7 @@ const page = () => {
 
 
                         <Image
-                            src="/Menu.svg"
+                            src={Menu}
                             alt="Menu"
                             width={20}
                             height={20}
@@ -71,8 +84,8 @@ const page = () => {
 
                 <div>
                     <Image
-                        src="/Image Left chair.png"
-                        alt="Image"
+                        src={ImageLeftchair}
+                        alt="ImageLeftchair"
                         width={721}
                         height={759}
                         className="w-full lg:mb-0 mb-10"
@@ -179,7 +192,7 @@ const page = () => {
                         {/* card1 */}
                         <div>
                             <Image
-                                src="/chaircard.png"
+                                src={chaircard}
                                 alt="Right Image"
                                 width={305}
                                 height={375}
@@ -193,7 +206,7 @@ const page = () => {
                         {/* card2 */}
                         <div>
                             <Image
-                                src="/matka.png"
+                                src={matka}
                                 alt="Right Image"
                                 width={305}
                                 height={375}
@@ -208,7 +221,7 @@ const page = () => {
                         {/* card3 */}
                         <div>
                             <Image
-                                src="/Parent.png"
+                                src={Parent}
                                 alt="Right Image"
                                 width={305}
                                 height={375}
@@ -223,7 +236,7 @@ const page = () => {
                         {/* card4 */}
                         <div>
                             <Image
-                                src="/lamp.png"
+                                src={lamp}
                                 alt="Right Image"
                                 width={305}
                                 height={375}

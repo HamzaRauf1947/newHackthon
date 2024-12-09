@@ -4,6 +4,19 @@ import NavbarTop from "../component/NavbarTop"
 import Image from "next/image"
 
 
+import Sprout from "../../../Public/Sprout.svg"
+import Purchase from "../../../Public/Purchase.svg"
+import tick from "../../../Public/tick.svg"
+import Delivery from "../../../Public/Delivery.svg"
+
+
+
+
+import ImageBlock from "../../../Public/ImageBlock.png"
+import left from "../../../Public/left.png"
+
+
+
 
 const About = () => {
     return (
@@ -49,7 +62,7 @@ const About = () => {
 
                     <div className="flex-1 ">
                         <Image
-                            src="/Image Block.png"
+                            src={ImageBlock}
                             alt="Right Image"
                             width={630}
                             height={478}
@@ -72,7 +85,7 @@ const About = () => {
 
                 <div>
                     <Image
-                        src="/left.png"
+                        src={left}
                         alt="Image"
                         width={720}
                         height={603}
@@ -119,7 +132,7 @@ const About = () => {
                             <div>
 
                                 <Image
-                                    src="/Delivery.svg"
+                                    src={Delivery}
                                     alt="Delivery"
                                     width={24}
                                     height={24}
@@ -136,14 +149,14 @@ const About = () => {
                         <div className="flex items-center justify-between bg-lightGray lg:p-12 p-6 ">
                             <div>
 
-                                <Image
-                                    src="/Checkmark--outline.svg"
-                                    alt="Delivery"
-                                    width={24}
-                                    height={24}
-                                    className="mb-4"
+                            <Image
+                                src={tick}
+                                alt="Delivery"
+                                width={24}
+                                height={24}
+                                className="mb-4"
 
-                                />
+                            />
 
                                 <h3 className="mb-2 text-[20px]">Made by true artisans</h3>
                                 <h3 className="">Handmade crafted goods made with
@@ -156,15 +169,14 @@ const About = () => {
 
                             <div>
 
-                                <Image
-                                    src="/Purchase.svg"
-                                    alt="Delivery"
-                                    width={24}
-                                    height={24}
-                                    className="mb-4"
+                            <Image
+                                src={Purchase}
+                                alt="Delivery"
+                                width={24}
+                                height={24}
+                                className="mb-4"
 
-                                />
-
+                            />
                                 <h3 className="mb-2 text-[20px]">Unbeatable prices</h3>
                                 <h3 className="">For our materials and quality you won’t find better prices anywhere</h3>
                             </div>
@@ -174,14 +186,14 @@ const About = () => {
                         <div className="flex items-center justify-between bg-lightGray lg:p-12 p-6 ">
                             <div>
 
-                                <Image
-                                    src="/Sprout.svg"
-                                    alt="Delivery"
-                                    width={24}
-                                    height={24}
-                                    className="mb-4"
+                            <Image
+                                src={Sprout}
+                                alt="Delivery"
+                                width={24}
+                                height={24}
+                                className="mb-4"
 
-                                />
+                            />
 
                                 <h3 className="mb-2 text-[20px]">Recycled packaging</h3>
                                 <h3 className="">We use 100% recycled packaging to ensure our footprint is manageable</h3>

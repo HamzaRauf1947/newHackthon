@@ -3,6 +3,11 @@ import Navbar from "../component/Navbar"
 import Image from "next/image"
 
 
+
+import matka from "../../../Public/matka.png"
+import pot2 from "../../../Public/pot2.png"
+
+
 const page = () => {
   return (
     <div>
@@ -35,7 +40,7 @@ const page = () => {
                         <div className="flex justify-between items-center ">
                                 <div className="flex items-center gap-[21px]">
                                     <Image
-                                    src="/matka.png"
+                                    src={matka}
                                     alt="Parent"
                                     width={109}
                                     height={134}
@@ -76,7 +81,7 @@ const page = () => {
                         <div className="flex justify-between items-center ">
                                 <div className="flex items-center gap-[21px]">
                                     <Image
-                                    src="/pot2.png"
+                                    src={pot2}
                                     alt="Parent"
                                     width={109}
                                     height={134}

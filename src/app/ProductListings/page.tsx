@@ -3,13 +3,30 @@ import Navbar from "../component/Navbar"
 import Link from "next/link"
 
 
+import matka from "../../../Public/matka.png"
+import Parent from "../../../Public/Parent.png"
+import lamp from "../../../Public/lamp.png"
+import chaircard from "../../../Public/chaircard.png"
+
+import img1 from "../../../Public/img1.png"
+import img2 from "../../../Public/img2.png"
+import img3 from "../../../Public/img3.png"
+import img4 from "../../../Public/img4.png"
+
+
+import Caretdown from "../../../Public/Caretdown.svg"
+
+
+
+
 const page = () => {
+
   return (
     <div>
       <Navbar/>
 
 
-      <div className="w-full h-[209px] bg-bannerImg bg-cover flex justify-center bg-center">
+      <div style={{backgroundImage:"url(/banner.png)"}} className="w-full h-[209px]   bg-cover flex justify-center bg-center">
   <div className="w-full max-w-7xl flex sm:items-end items-center justify-center sm:justify-normal sm:mb-[36px] px-4">
     <h1 className="text-white text-[36px] ">All Products</h1>
   </div>
@@ -21,7 +38,7 @@ const page = () => {
                 <div className="md:flex hidden items-center gap-2">
                     <h1>Category</h1>
                     <Image
-                        src="/Caret--down.svg"
+                        src={Caretdown}
                         alt="Caret--down"
                         width={16}
                         height={16}
@@ -32,7 +49,7 @@ const page = () => {
                 <div className="md:flex hidden  items-center gap-2">
                     <h1>Product Type</h1>
                     <Image
-                        src="/Caret--down.svg"
+                        src={Caretdown}
                         alt="Caret--down"
                         width={16}
                         height={16}
@@ -43,7 +60,7 @@ const page = () => {
                 <div className="md:flex hidden  items-center gap-2">
                     <h1>Pice</h1>
                     <Image
-                        src="/Caret--down.svg"
+                        src={Caretdown}
                         alt="Caret--down"
                         width={16}
                         height={16}
@@ -54,7 +71,7 @@ const page = () => {
                 <div className="md:flex hidden  items-center gap-2">
                     <h1>Brand</h1>
                     <Image
-                        src="/Caret--down.svg"
+                        src={Caretdown}
                         alt="Caret--down"
                         width={16}
                         height={16}
@@ -65,7 +82,7 @@ const page = () => {
                 <div className="flex items-center md:hidden gap-2 sm:w-[163px] w-[120px] h-[56px] bg-lightGray justify-center">
                     <h1>Filter</h1>
                     <Image
-                        src="/Caret--down.svg"
+                        src={Caretdown}
                         alt="Caret--down"
                         width={16}
                         height={16}
@@ -78,7 +95,7 @@ const page = () => {
             <div className="md:flex hidden  items-center  gap-2">
                     <h1>Sorting by</h1>
                     <Image
-                        src="/Caret--down.svg"
+                        src={Caretdown}
                         alt="Caret--down"
                         width={16}
                         height={16}
@@ -90,7 +107,7 @@ const page = () => {
                 <div className="md:flex hidden  items-center gap-2">
                     <h1>Dated Added</h1>
                     <Image
-                        src="/Caret--down.svg"
+                        src={Caretdown}
                         alt="Caret--down"
                         width={16}
                         height={16}
@@ -103,7 +120,7 @@ const page = () => {
                 <div className="flex items-center md:hidden gap-2 sm:w-[163px] w-[120px] h-[56px] bg-lightGray justify-center">
                     <h1>Sorting</h1>
                     <Image
-                        src="/Caret--down.svg"
+                        src={Caretdown}
                         alt="Caret--down"
                         width={16}
                         height={16}
@@ -127,70 +144,70 @@ const page = () => {
 
   <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-5 gap-4">
 
-    {/* card1 */}
-    <div>
-      <Image
-        src="/chaircard.png"
-        alt="Right Image"
-        width={305}
-        height={375}
-        className="mb-[24px] w-full"
+       {/* card1 */}
+       <div>
+              <Image
+                src={chaircard}
+                alt="Right Image"
+                width={305}
+                height={375}
+                className="mb-[24px] w-full"
 
-      />
-      <h3 className="text-[20px] mb-2">The Dandy chair</h3>
-      <h3 className="text-[18px]">£250</h3>
-    </div>
+              />
+              <h3 className="text-[20px] mb-2">The Dandy chair</h3>
+              <h3 className="text-[18px]">£250</h3>
+            </div>
 
-    {/* card2 */}
-    <div>
-      <Image
-        src="/matka.png"
-        alt="Right Image"
-        width={305}
-        height={375}
-        className="mb-[24px] w-full"
+            {/* card2 */}
+            <div>
+              <Image
+                src={matka}
+                alt="Right Image"
+                width={305}
+                height={375}
+                className="mb-[24px] w-full"
 
-      />
-      <h3 className="text-[20px] mb-2">The Dandy chair</h3>
-      <h3 className="text-[18px]">£250</h3>
-    </div>
-
-
-    {/* card3 */}
-    <div>
-      <Image
-        src="/Parent.png"
-        alt="Right Image"
-        width={305}
-        height={375}
-        className="mb-[24px] w-full"
-
-      />
-      <h3 className="text-[20px] mb-2">The Silky Vase</h3>
-      <h3 className="text-[18px]">£125</h3>
-    </div>
+              />
+              <h3 className="text-[20px] mb-2">The Dandy chair</h3>
+              <h3 className="text-[18px]">£250</h3>
+            </div>
 
 
-    {/* card4 */}
-    <div>
-      <Image
-        src="/lamp.png"
-        alt="Right Image"
-        width={305}
-        height={375}
-        className="mb-[24px] w-full"
+            {/* card3 */}
+            <div>
+              <Image
+                src={Parent}
+                alt="Right Image"
+                width={305}
+                height={375}
+                className="mb-[24px] w-full"
 
-      />
-      <h3 className="text-[20px] mb-2">The Lucy Lamp</h3>
-      <h3 className="text-[18px]">£399</h3>
-    </div>
+              />
+              <h3 className="text-[20px] mb-2">The Silky Vase</h3>
+              <h3 className="text-[18px]">£125</h3>
+            </div>
+
+
+            {/* card4 */}
+            <div>
+              <Image
+                src={lamp}
+                alt="Right Image"
+                width={305}
+                height={375}
+                className="mb-[24px] w-full"
+
+              />
+              <h3 className="text-[20px] mb-2">The Lucy Lamp</h3>
+              <h3 className="text-[18px]">£399</h3>
+            </div>
 
 
 
      {/* card5 */}
      <div>
       <Image
-        src="/1.png"
+        src={img1}
         alt="Right Image"
         width={305}
         height={375}
@@ -205,7 +222,7 @@ const page = () => {
      {/* card6 */}
      <div>
       <Image
-        src="/2.png"
+        src={img2}
         alt="Right Image"
         width={305}
         height={375}
@@ -221,7 +238,7 @@ const page = () => {
      {/* card7 */}
      <div>
       <Image
-        src="/3.png"
+        src={img3}
         alt="Right Image"
         width={305}
         height={375}
@@ -235,7 +252,7 @@ const page = () => {
        {/* card8 */}
        <div>
       <Image
-        src="/4.png"
+        src={img4}
         alt="Right Image"
         width={305}
         height={375}
@@ -246,70 +263,73 @@ const page = () => {
       <h3 className="text-[18px]">£399</h3>
     </div>
 
-        {/* card1 */}
-        <div>
-      <Image
-        src="/chaircard.png"
-        alt="Right Image"
-        width={305}
-        height={375}
-        className="mb-[24px] w-full"
+       {/* card1 */}
+       <div>
+              <Image
+                src={chaircard}
+                alt="Right Image"
+                width={305}
+                height={375}
+                className="mb-[24px] w-full"
 
-      />
-      <h3 className="text-[20px] mb-2">The Dandy chair</h3>
-      <h3 className="text-[18px]">£250</h3>
-    </div>
+              />
+              <h3 className="text-[20px] mb-2">The Dandy chair</h3>
+              <h3 className="text-[18px]">£250</h3>
+            </div>
 
-    {/* card2 */}
-    <div>
-      <Image
-        src="/matka.png"
-        alt="Right Image"
-        width={305}
-        height={375}
-        className="mb-[24px] w-full"
+            {/* card2 */}
+            <div>
+              <Image
+                src={matka}
+                alt="Right Image"
+                width={305}
+                height={375}
+                className="mb-[24px] w-full"
 
-      />
-      <h3 className="text-[20px] mb-2">The Dandy chair</h3>
-      <h3 className="text-[18px]">£250</h3>
-    </div>
-
-
-    {/* card3 */}
-    <div>
-      <Image
-        src="/Parent.png"
-        alt="Right Image"
-        width={305}
-        height={375}
-        className="mb-[24px] w-full"
-
-      />
-      <h3 className="text-[20px] mb-2">The Silky Vase</h3>
-      <h3 className="text-[18px]">£125</h3>
-    </div>
+              />
+              <h3 className="text-[20px] mb-2">The Dandy chair</h3>
+              <h3 className="text-[18px]">£250</h3>
+            </div>
 
 
-    {/* card4 */}
-    <div>
-      <Image
-        src="/lamp.png"
-        alt="Right Image"
-        width={305}
-        height={375}
-        className="mb-[24px] w-full"
+            {/* card3 */}
+            <div>
+              <Image
+                src={Parent}
+                alt="Right Image"
+                width={305}
+                height={375}
+                className="mb-[24px] w-full"
 
-      />
-      <h3 className="text-[20px] mb-2">The Lucy Lamp</h3>
-      <h3 className="text-[18px]">£399</h3>
-    </div>
+              />
+              <h3 className="text-[20px] mb-2">The Silky Vase</h3>
+              <h3 className="text-[18px]">£125</h3>
+            </div>
 
+
+            {/* card4 */}
+            <div>
+              <Image
+                src={lamp}
+                alt="Right Image"
+                width={305}
+                height={375}
+                className="mb-[24px] w-full"
+
+              />
+              <h3 className="text-[20px] mb-2">The Lucy Lamp</h3>
+              <h3 className="text-[18px]">£399</h3>
+            </div>
 
 
 
 
 
   </div>
+
+
+
+
 
   {/* Button View All */}
   <div className="w-full flex mt-[35px] items-center justify-center">

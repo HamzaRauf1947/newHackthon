@@ -8,6 +8,10 @@ import Parent from "../../Public/Parent.png"
 import RightImage from "../../Public/RightImage.png"
 import chaircard from "../../Public/chaircard.png"
 import matka from "../../Public/matka.png"
+import lamp from "../../Public/lamp.png"
+import sofa from "../../Public/sofa.png"
+import whiteChair from "../../Public/whiteChair.png"
+import bannerIMG from "../../Public/bannerIMG.png"
 
 export default function Home() {
   return (
@@ -114,7 +118,7 @@ export default function Home() {
             {/* card4 */}
             <div>
               <Image
-                src="/lamp.png"
+                src={lamp}
                 alt="Right Image"
                 width={305}
                 height={375}
@@ -153,7 +157,7 @@ export default function Home() {
             {/* card1 */}
             <div>
               <Image
-                src="/sofa.png"
+                src={sofa}
                 alt="Right Image"
                 width={305}
                 height={375}
@@ -168,7 +172,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-5">
               <div>
                 <Image
-                  src="/chaircard.png"
+                  src={chaircard}
                   alt="Right Image"
                   width={305}
                   height={375}
@@ -183,7 +187,7 @@ export default function Home() {
               {/* card3 */}
               <div className="">
                 <Image
-                  src="/whiteChair.png"
+                  src={whiteChair}
                   alt="Right Image"
                   width={305}
                   height={375}
@@ -283,7 +287,7 @@ export default function Home() {
 
           <div>
             <Image
-            src="/Image.png"
+            src={bannerIMG}
             alt="Image"
             width={720}
             height={603}

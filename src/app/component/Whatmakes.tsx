@@ -1,5 +1,10 @@
 import Image from "next/image"
 
+import Delivery from "../../../Public/Delivery.svg"
+import tick from "../../../Public/tick.svg"
+import Purchase from "../../../Public/Purchase.svg"
+import Sprout from "../../../Public/Sprout.svg"
+
 
 const Whatmakes = () => {
     return (
@@ -13,7 +18,7 @@ const Whatmakes = () => {
                         <div>
 
                             <Image
-                                src="/Delivery.svg"
+                                src={Delivery}
                                 alt="Delivery"
                                 width={24}
                                 height={24}
@@ -30,8 +35,8 @@ const Whatmakes = () => {
                     <div className="flex items-center justify-between ">
                         <div>
 
-                            <Image
-                                src="/Checkmark--outline.svg"
+                        <Image
+                                src={tick}
                                 alt="Delivery"
                                 width={24}
                                 height={24}
@@ -51,7 +56,7 @@ const Whatmakes = () => {
                         <div>
 
                             <Image
-                                src="/Purchase.svg"
+                                src={Purchase}
                                 alt="Delivery"
                                 width={24}
                                 height={24}
@@ -69,7 +74,7 @@ const Whatmakes = () => {
                         <div>
 
                             <Image
-                                src="/Sprout.svg"
+                                src={Sprout}
                                 alt="Delivery"
                                 width={24}
                                 height={24}
